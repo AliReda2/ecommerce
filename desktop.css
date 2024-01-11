@@ -1,0 +1,206 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: #131921;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.magnifyingGlass {
+    background-color: burlywood;
+    width: 2.5em;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.glass {
+    border: 2px solid white;
+    height: 16px;
+    border-radius: 1em;
+    width: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+.stick {
+    border: 2px solid white;
+    border: 2px solid white;
+    height: 12px;
+    width: 0px;
+    rotate: 134deg;
+    position: relative;
+    left: 26px;
+    top: -2px;
+    background-color: white;
+}
+
+.searchBar {
+    display: flex;
+    flex-grow: 0.7;
+    height: 2em;
+}
+
+.searchBar select {
+    background-color: grey;
+}
+
+.searchBar input {
+    width: -webkit-fill-available;
+    outline: none;
+    color: black;
+    font-size: large;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    height: 30em;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content:hover {
+    box-shadow: 0 30px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgbargba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+.fa {
+    font-size: 26px;
+    transition: .4s;
+}
+
+.checked {
+    color: #ff9f43;
+}
+
+.fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+.buy-1 {
+    background: #2183a2;
+}
+
+.buy-2 {
+    background: #3b3e6e;
+}
+
+.buy-3 {
+    background: #0b0b0b;
+}
+
+.buy-4 {
+    background: #ff9f43;
+}
+
+@media(max-width:1000px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media(max-width:750px) {
+    .content {
+        width: 100%;
+    }
+}
